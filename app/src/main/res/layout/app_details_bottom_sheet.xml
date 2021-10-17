@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_app_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:clipToPadding="false">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple_200"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:id="@+id/sheetImg_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_sheetTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App title"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_sheetGet"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:insetTop="0dp"
+                android:layout_marginEnd="10dip"
+                android:insetBottom="0dp"
+                android:text="Get"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sheetSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:paddingVertical="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:scrollbars = "vertical"
+        android:textSize="15dp"
+        android:textColor="#9E9E9E"
+        android:text="Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary Summary "
+        />
+
+
+</LinearLayout>
